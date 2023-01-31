@@ -1,6 +1,6 @@
 export interface Transferencia {
-  id: string|number;
+  id?: string|number;//optional
   valor: number;
-  destino: string;
-  data: string;
-}//from http://json2ts.com/, a partir do json
+  destino: string | number;
+  data?: string;//optional
+}
