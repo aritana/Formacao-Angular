@@ -1,8 +1,7 @@
-<!-- Conect the event binding aoTransferir, in the child, to the method transferir in the parent -->
-<!--$event contais the data-->
-<!--( bind from view to source)-->
-<!--[ bind from source to view]-->
-<!--[(to bind in a two-way sequence of view to source to view)]-->
-<app-nova-transferencia></app-nova-transferencia>
-
-<app-extrato></app-extrato>
+<header>
+  <a routerLink="extrato">ByteBank</a>
+  <a routerLink="nova-transferencia" routerLinkActive="ativo">Nova Transferência</a>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>
