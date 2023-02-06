@@ -1,0 +1,1 @@
+Após descompactar a pasta, entre pela sua linha de comando na pasta api, use o comando npm i, para instalar as dependências do back-end, e execute-o com o comando npm start. O back-end deve ser executado durante os nossos exercícios.
