@@ -43,9 +43,9 @@
     >
     </app-mensagem>
     <app-mensagem
-    *ngIf="novoUsuarioForm.get('userName')?.errors?.['usuarioExistente']"
-    mensagem="Usuário já existe">
-
+      *ngIf="novoUsuarioForm.get('userName')?.errors?.['usuarioExistente']"
+      mensagem="Usuário já existe"
+    >
     </app-mensagem>
   </div>
   <div class="form-group">
@@ -55,6 +55,10 @@
       class="form-control"
       formControlName="password"
     />
+    <app-mensagem
+    *ngIf="novoUsuarioForm.errors?.['senhaIgualUsuario']"
+    mensagem="Senha deve ser diferente do usuário">
+    </app-mensagem>
   </div>
   <button class="btn btn-primary btn-block">Cadastro</button>
 </form>
